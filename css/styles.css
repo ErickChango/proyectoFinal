@@ -1,0 +1,53 @@
+
+body {
+    background-color:  #4B0082;
+     color: #f8f9fa; 
+}
+
+.navbar-custom {
+     background-color: #4B0082; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color:  #f8f9fa; 
+}
+.text-muted {
+    color:  #cccccc ; 
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border: none;
+    color: #f8f9fa;
+}
+
+
+.card-title, .card-text {
+    color:  #f8f9fa; 
+}
+
+.form-control, .form-select {
+    background-color: rgba(255, 255, 255, 0.15);
+border-color:  rgba(255, 255, 255, 0.3);
+    color:  #f8f9fa;
+}
+
+.form-control::placeholder {
+    color:  #cccccc;
+}
+
+.form-select option {
+    background-color: #4B0082; 
+     color:  #f8f9fa;
+}
+
+.btn-custom {
+    background-color: #8A2BE2;
+    border-color: #8A2BE2;
+    color: white;
+}
+
+.btn-custom:hover {
+     background-color: #9370DB; 
+    border-color: #9370DB;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - EA Store</title>
+    <link href="Nosotros.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="imagenes/cpu-fill.svg" type="image/svg+xml">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="contenedor">
+            <a class="marca-navbar" href="index.html">
+                <img src="imagenes/logo.jpg" alt="Logo EA Store" width="100" height="100">
+             </a>
+             <button class="boton-colapsar navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
+                <span class="icono-colapsar navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNavegacion">
+                <ul class="navbar-nav me-auto">
+                     <li class="item-nav"><a class="enlace-nav" href="http://127.0.0.1:5500/Index.html">Inicio</a></li>
+                    <li class="item-nav"><a class="enlace-nav" href="http://127.0.0.1:5500/Productos/Productos.html">Productos</a></li>
+                    <li class="item-nav"><a class="enlace-nav activo" href="http://127.0.0.1:5500/Productos/Productos.html">Nosotros</a></li>
+                </ul>
+                <a href="http://127.0.0.1:5500/Productos/Productos.html" class="boton-primario btn text-white">Ver productos</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contenedor-principal container my-5">
+        <div class="fila row align-items-center">
+            <div class="columna-imagen col-lg-6 mb-4">
+                <img src="imagenes/compu1.jpg" class="imagen-nosotros img-fluid" alt="Nuestra tienda">
+            </div>
+            <div class="columna-texto col-lg-6">
+                 <h1 class="titulo-principal display-5 fw-bold">Sobre EA Store</h1>
+                <p class="subtitulo lead">Expertos en tecnología desde 2025</p>
+                <p class="descripcion">En EA Store nos apasiona ofrecer los mejores equipos tecnológicos con el balance perfecto entre rendimiento y precio. Nuestro equipo de expertos selecciona cuidadosamente cada producto para garantizar la máxima calidad.</p>
+                
+                <div class="tarjeta-mision d-flex align-items-center my-4">
+                    <div class="icono-mision bg-primary bg-opacity-10 p-3 rounded me-3">
+                        <img src="imagenes/cpu-fill.svg" alt="Misión" style="height: 30px;">
+                    </div>
+                    <div>
+                         <h5 class="titulo-mision">Nuestra Misión</h5>
+                        <p class="texto-mision mb-0">Proveer tecnología de vanguardia con servicio excepcional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="seccion-equipo my-5">
+            <h2 class="titulo-equipo text-center mb-4">Nuestro Equipo</h2>
+            <div class="fila-equipo row g-4 justify-content-center">
+                <div class="columna-equipo col-md-6 col-lg-3">
+                    <div class="tarjeta-miembro card h-100 shadow-sm text-center p-3">
+                        <img src="imagenes/teemwork22.png" class="imagen-miembro rounded-circle mx-auto mb-3" width="100" height="100" alt="Miembro">
+                        <h5 class="nombre-miembro">Anthony Ruiz</h5>
+                        <hr>
+                        <img src="imagenes/user_13230.webp" class="imagen-miembro rounded-circle mx-auto mb-3" width="100" height="100" alt="Miembro">
+                        <h6 class="nombre-miembro">Erick Chango</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="pie-pagina text-center">
+        <p class="texto-pie text-muted">EA Store © 2025 Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

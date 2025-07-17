@@ -1,0 +1,110 @@
+body {
+    background-color: #4B0082;
+    color: #f8f9fa;
+}
+
+.navbar-custom {
+    background-color: #4B0082;
+}
+
+.product-card {
+    background-color: rgba(60, 0, 120, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: black;
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.product-card .card-body h5 {
+    color: black;
+}
+
+.product-card .card-body p.text-muted {
+    color: gray !important;
+}
+
+.product-card .fw-bold.text-dark {
+    color: #8A2BE2 !important;
+}
+
+.category-badge {
+    background-color: #8A2BE2;
+    color: white;
+    font-size: 0.75em;
+    padding: 0.4em 0.6em;
+    border-radius: 0.25rem;
+}
+
+.form-control, .form-select {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #f8f9fa;
+}
+
+.form-control::placeholder {
+    color: #cccccc;
+}
+
+.form-select option {
+    background-color: #4B0082;
+    color: #f8f9fa;
+}
+
+.btn-custom {
+    background-color: #8A2BE2;
+    border-color: #8A2BE2;
+    color: black;
+}
+
+.btn-custom:hover {
+    background-color: #9370DB;
+    border-color: #9370DB;
+}
+
+h1, h2 {
+    color: black;
+}
+
+.text-center .text-muted {
+    color: gray;
+}
+.tabla-productos {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-collapse: collapse;
+}
+.tabla-productos th,
+.tabla-productos td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+.tabla-productos thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    text-align: left;
+}
+.tabla-productos tbody tr:hover {
+    background-color: #f5f5f5;
+}
+.encabezado-ordenable {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.icono-ordenacion {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.25rem;
+    flex-shrink: 0;
+}
+.texto-normal {
+    font-weight: 500;
+    color: #212529;
+    white-space: nowrap;
+}

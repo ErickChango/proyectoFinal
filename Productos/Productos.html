@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - EA Store</title>
+    <link href="Productos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="Imagenes/cpu-fill.svg" type="image/svg+xml">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="contenedor">
+             <a class="navbar-brand" href="http://127.0.0.1:5500/Index.html">
+                <img src="Imagenes/logo.jpg" alt="EA Store Logo" width="100" height="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/Index.html">Inicio</a></li>
+                     <li class="nav-item"><a class="nav-link active" href="http://127.0.0.1:5500/Productos/Productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/Pagina%20Nosotros/Nosotros.html">Nosotros</a></li>
+                </ul>
+                <a href="#" class="btn btn-custom">
+                    <img src="Imagenes/cart4.svg" alt="Carrito" style="height: 20px;">
+                
+                  </a>
+            </div>
+        </div>
+    </nav>
+
+     <div class="contenedor my-5">
+        <h1 class="text-center mb-5">Nuestros Productos</h1>
+        
+         <div class="row mb-4">
+            <div class="col-12">
+                <table class="tabla-productos">
+                    <thead>
+                        <tr>
+                            <th>
+                                <span class="encabezado-ordenable">
+                                     Nombre
+                                    <svg class="icono-ordenacion" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
+                                    </svg>
+                                </span>
+                            </th>
+                            <th>
+                                <span class="encabezado-ordenable">
+                                    Categoría
+                                    <svg class="icono-ordenacion" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
+                                      </svg>
+                                </span>
+                            </th>
+                            <th>
+                                <span class="encabezado-ordenable">
+                                    Marca
+                                      <svg class="icono-ordenacion" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
+                                     </svg>
+                                 </span>
+                             </th>
+                              <th>
+                                <span class="encabezado-ordenable">
+                                    Precio
+                                    <svg class="icono-ordenacion" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
+                                    </svg>
+                                </span>
+                            </th>
+                            <th>
+                                <span class="encabezado-ordenable">
+                                    Stock
+                                     <svg class="icono-ordenacion" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
+                                    </svg>
+                                </span>
+                             </th>
+                            <th>
+                                <span class="encabezado-ordenable">
+                                    Ventas Totales
+                                    <svg class="icono-ordenacion" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
+                                    </svg>
+                                </span>
+                            </th>
+                              <th>
+                                <span class="encabezado-ordenable">
+                                    Estado
+                                    <svg class="icono-ordenacion" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
+                                    </svg>
+                                </span>
+                            </th>
+                        </tr>
+                    </thead>
+                     <tbody>
+                        <tr>
+                            <td class="texto">PC Compacta</td>
+                            <td>PC</td>
+                            <td>PC Compacta</td>
+                            <td>$1,299</td>
+                             <td>50</td>
+                            <td>200</td>
+                            <td>Agotado</td>
+                        </tr>
+                        <tr>
+                            <td class="texto">Laptop Creativa</td>
+                            <td>Laptop</td>
+                            <td>Laptop Creativa</td>
+                            <td>$2,799.99</td>
+                            <td>120</td>
+                            <td>300</td>
+                            <td>Agotado</td>
+                         </tr>
+                        <tr>
+                            <td class="texto">PC Streaming</td>
+                            <td>PC</td>
+                             <td>PC Streaming</td>
+                            <td>$1,899.99</td>
+                            <td>80</td>
+                            <td>150</td>
+                            <td>En Stock</td>
+                        </tr>
+                        <tr>
+                            <td class="texto">Laptop Económica</td>
+                            <td>Laptop</td>
+                             <td>Laptop Económica</td>
+                             <td>$1,099</td>
+                             <td>30</td>
+                             <td>120</td>
+                             <td>En Stock</td>
+                         </tr>
+                        <tr>
+                            <td class="texto">Workstation Pro</td>
+                            <td>Workstation Pro</td>
+                            <td>PC</td>
+                             <td>$1,199.99</td>
+                            <td>25</td>
+                            <td>80</td>
+                            <td>En Stock</td>
+                        </tr>
+                        <tr>
+                            <td class="texto">Ultrabook Premium</td>
+                            <td>Ultrabook Premium</td>
+                            <td>Intel</td>
+                            <td>$1,199.99</td>
+                            <td>100</td>
+                            <td>200</td>
+                             <td>En Stock</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="row g-4 mt-5"> <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card producto-card h-100 shadow-sm">
+                    <span class="badge category-badge position-absolute top-0 end-0 m-2">Laptop</span>
+                    <img src="Imagenes/Ultrabook Premium.jpg" class="card-img-top product-img" alt="Ultrabook Premium">
+                    <div class="card-body">
+                        <h5>Ultrabook Premium</h5>
+                         <p class="text-muted small">Intel i5-1135G7, 8GB RAM, 512GB SSD, Iris Xe, 14" 4K Touch, 1.2kg</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-dark">$1,199.99</span>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card producto-card h-100 shadow-sm">
+                    <span class="badge category-badge position-absolute top-0 end-0 m-2">PC</span>
+                    <img src="Imagenes/Workstation Pro.jpg" class="card-img-top product-img" alt="Workstation Pro">
+                    <div class="card-body">
+                        <h5>Workstation Pro</h5>
+                        <p class="text-muted small">Intel Xeon W-2245, 64GB RAM, RTX A4000 16GB, 2TB NVMe + 4TB HDD</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-dark">$3,299.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card producto-card h-100 shadow-sm">
+                    <span class="badge category-badge position-absolute top-0 end-0 m-2">Laptop</span>
+                     <img src="Imagenes/Laptop Económica.avif" class="card-img-top product-img" alt="Laptop Económica">
+                    <div class="card-body">
+                        <h5>Laptop Económica</h5>
+                        <p class="text-muted small">Ryzen 5 5500U, 12GB RAM, 256GB SSD, Vega 7, 15.6" FHD, Windows 11</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-dark">$599.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card producto-card h-100 shadow-sm">
+                    <span class="badge category-badge position-absolute top-0 end-0 m-2">PC</span>
+                    <img src="Imagenes/PC Streaming.png" class="card-img-top product-img" alt="PC Streaming">
+                    <div class="card-body">
+                        <h5>PC Streaming</h5>
+                        <p class="text-muted small">Ryzen 7 5800X, 16GB RAM, RTX 3070 8GB, 1TB NVMe, WiFi 6, RGB</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-dark">$1,899.99</span>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card producto-card h-100 shadow-sm">
+                    <span class="badge category-badge position-absolute top-0 end-0 m-2">Laptop</span>
+                    <img src="Imagenes/Laptop Creativa.jpg" class="card-img-top product-img" alt="Laptop Creativa">
+                    <div class="card-body">
+                        <h5>Laptop Creativa</h5>
+                        <p class="text-muted small">Intel i9-12900H, 32GB RAM, 2TB SSD, RTX 3070 Ti 8GB, 16" QHD 165Hz</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-dark">$2,799.99</span>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card product-card h-100 shadow-sm">
+                    <span class="badge category-badge position-absolute top-0 end-0 m-2">PC</span>
+                    <img src="Imagenes/PC Compacta.jpg" class="card-img-top product-img" alt="PC Compacta">
+                    <div class="card-body">
+                         <h5>PC Compacta</h5>
+                        <p class="text-muted small">Intel i5-12400, 16GB RAM, 512GB SSD, Iris Xe, Mini-ITX, Sin GPU</p>
+                         <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-dark">$899.99</span>
+                         </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+     <div class="text-center">
+         <p class="text-muted">EA Store © 2025 Todos los derechos reservados.</p>
+     </div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
