@@ -4,72 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros - EA Store</title>
-    <link href="Nosotros.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" href="imagenes/cpu-fill.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="Nosotros.css" rel="stylesheet">
+    <link rel="icon" href="../Imagenes/cpu-fill.svg" type="image/svg+xml">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
-        <div class="contenedor">
-            <a class="marca-navbar" href="index.html">
-                <img src="imagenes/logo.jpg" alt="Logo EA Store" width="100" height="100">
-             </a>
-             <button class="boton-colapsar navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
-                <span class="icono-colapsar navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="menuNavegacion">
-                <ul class="navbar-nav me-auto">
-                     <li class="item-nav"><a class="enlace-nav" href="http://127.0.0.1:5500/Index.html">Inicio</a></li>
-                    <li class="item-nav"><a class="enlace-nav" href="http://127.0.0.1:5500/Productos/Productos.html">Productos</a></li>
-                    <li class="item-nav"><a class="enlace-nav activo" href="http://127.0.0.1:5500/Productos/Productos.html">Nosotros</a></li>
-                </ul>
-                <a href="http://127.0.0.1:5500/Productos/Productos.html" class="boton-primario btn text-white">Ver productos</a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top" aria-label="Navegación principal">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../Index.html">
+                    <img src="../Imagenes/logo.jpg" alt="Logo EA Store" class="navbar-brand-img" width="100" height="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuNavegacion">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../../Index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../Productos/Productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="Nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../Formulario/Formulario.html">Registro</a></li>
+                    </ul>
+                    <a href="../../Productos/Productos.html" class="btn btn-custom text-white">Ver Productos</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <div class="contenedor-principal container my-5">
-        <div class="fila row align-items-center">
-            <div class="columna-imagen col-lg-6 mb-4">
-                <img src="imagenes/compu1.jpg" class="imagen-nosotros img-fluid" alt="Nuestra tienda">
-            </div>
-            <div class="columna-texto col-lg-6">
-                 <h1 class="titulo-principal display-5 fw-bold">Sobre EA Store</h1>
-                <p class="subtitulo lead">Expertos en tecnología desde 2025</p>
-                <p class="descripcion">En EA Store nos apasiona ofrecer los mejores equipos tecnológicos con el balance perfecto entre rendimiento y precio. Nuestro equipo de expertos selecciona cuidadosamente cada producto para garantizar la máxima calidad.</p>
-                
-                <div class="tarjeta-mision d-flex align-items-center my-4">
-                    <div class="icono-mision bg-primary bg-opacity-10 p-3 rounded me-3">
-                        <img src="imagenes/cpu-fill.svg" alt="Misión" style="height: 30px;">
+    <main>
+        <section class="contenedor-principal container my-5">
+            <div class="row align-items-center">
+                <div class="columna-imagen col-lg-6 mb-4 mb-lg-0">
+                    <img src="Imagenes/1.jpg" class="imagen-nosotros img-fluid" alt="Imagen de un moderno espacio de trabajo con equipos tecnológicos, representando la esencia de EA Store.">
+                </div>
+                <div class="columna-texto col-lg-6">
+                    <h1 class="titulo-principal display-5 fw-bold">Sobre EA Store: Tu Aliado en Tecnología</h1>
+                    <p class="subtitulo lead">Innovando con la mejor tecnología desde 2025</p>
+                    <p class="descripcion">En EA Store, nuestra pasión es conectar a nuestros clientes con la tecnología de vanguardia que necesitan. Seleccionamos cuidadosamente cada producto, garantizando el balance perfecto entre rendimiento, calidad y precio. Nos dedicamos a ser tu fuente confiable para equipos de alta calidad.</p>
+
+                    <div class="contenedor-video-responsivo my-4">
+                        <iframe class="marco-video-responsivo" src="https://www.youtube.com/embed/yX4NcpqJn3c?si=Pfdha1uevSxf-inn" title="Video de presentación de EA Store" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p class="text-center text-muted mt-2 small">Descubre un poco más sobre nuestra visión y la experiencia en EA Store.</p>
                     </div>
-                    <div>
-                         <h5 class="titulo-mision">Nuestra Misión</h5>
-                        <p class="texto-mision mb-0">Proveer tecnología de vanguardia con servicio excepcional.</p>
+
+                    <div class="tarjeta-mision d-flex align-items-center my-4">
+                        <div class="icono-mision bg-primary bg-opacity-10 p-3 rounded me-3">
+                            <i class="bi bi-cpu-fill" style="font-size: 30px; color: var(--bs-primary);"></i>
+                        </div>
+                        <div>
+                            <h5 class="titulo-mision">Nuestra Misión</h5>
+                            <p class="texto-mision mb-0">Proveer tecnología de vanguardia, impulsando el futuro y ofreciendo un servicio al cliente excepcional.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-
-        <div class="seccion-equipo my-5">
-            <h2 class="titulo-equipo text-center mb-4">Nuestro Equipo</h2>
-            <div class="fila-equipo row g-4 justify-content-center">
-                <div class="columna-equipo col-md-6 col-lg-3">
-                    <div class="tarjeta-miembro card h-100 shadow-sm text-center p-3">
-                        <img src="imagenes/teemwork22.png" class="imagen-miembro rounded-circle mx-auto mb-3" width="100" height="100" alt="Miembro">
-                        <h5 class="nombre-miembro">Anthony Ruiz</h5>
-                        <hr>
-                        <img src="imagenes/user_13230.webp" class="imagen-miembro rounded-circle mx-auto mb-3" width="100" height="100" alt="Miembro">
-                        <h6 class="nombre-miembro">Erick Chango</h6>
+            <div class="seccion-equipo my-5">
+                <h2 class="titulo-equipo text-center mb-4">Conoce a Nuestro Equipo</h2>
+                <div class="fila-equipo row g-4 justify-content-center">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="tarjeta-miembro card h-100 shadow-sm text-center p-3">
+                            <img src="Imagenes/anthny.jpg" class="imagen-miembro rounded-circle mx-auto mb-3" width="120" height="120" alt="Retrato de Anthony Ruiz, co-fundador de EA Store.">
+                            <h5 class="nombre-miembro mb-0">Anthony Ruiz</h5>
+                            <p class="cargo-miembro text-muted small">Co-fundador & Experto en Hardware</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="tarjeta-miembro card h-100 shadow-sm text-center p-3">
+                            <img src="Imagenes/yo.jpg" class="imagen-miembro rounded-circle mx-auto mb-3" width="120" height="120" alt="Retrato de Erick Chango, especialista en soporte técnico de EA Store.">
+                            <h5 class="nombre-miembro mb-0">Erick Chango</h5>
+                            <p class="cargo-miembro text-muted small">Especialista en Soporte Técnico</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <section class="seccion-contacto my-5 py-5 text-center">
+                <h2 class="titulo-equipo text-center mb-4">Contáctanos</h2>
+                <p class="descripcion lead mb-4">¿Tienes alguna pregunta, sugerencia o necesitas soporte? ¡Estamos aquí para ayudarte!</p>
+
+                <div class="row justify-content-center g-4">
+                    <div class="col-md-4">
+                        <div class="tarjeta-mision d-flex flex-column align-items-center p-4 h-100">
+                            <div class="icono-mision bg-primary bg-opacity-10 p-3 rounded-circle mb-3">
+                                <i class="bi bi-envelope-fill" style="font-size: 30px; color: #00B4D8;"></i>
+                            </div>
+                            <h5 class="titulo-mision">Email</h5>
+                            <p class="texto-mision mb-0">ventas@eastore.com</p>
+                            <p class="texto-mision mb-0">soporte@eastore.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tarjeta-mision d-flex flex-column align-items-center p-4 h-100">
+                            <div class="icono-mision bg-primary bg-opacity-10 p-3 rounded-circle mb-3">
+                                <i class="bi bi-phone-fill" style="font-size: 30px; color: #00B4D8;"></i>
+                            </div>
+                            <h5 class="titulo-mision">Teléfono</h5>
+                            <p class="texto-mision mb-0">+593 99 123 4567</p>
+                            <p class="texto-mision mb-0">+593 99 987 6543</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tarjeta-mision d-flex flex-column align-items-center p-4 h-100">
+                            <div class="icono-mision bg-primary bg-opacity-10 p-3 rounded-circle mb-3">
+                                <i class="bi bi-geo-alt-fill" style="font-size: 30px; color: #00B4D8;"></i>
+                            </div>
+                            <h5 class="titulo-mision">Visítanos</h5>
+                            <p class="texto-mision mb-0">Av. Shyris N45-123 y El Telégrafo,</p>
+                            <p class="texto-mision mb-0">Quito, Ecuador</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="texto-mision mt-4">Horario de atención: Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+            </section>
+            </section>
+    </main>
+
+    <footer class="pie-pagina text-center py-4">
+        <div class="container">
+            <p class="texto-pie text-muted mb-0">EA Store © 2025 Todos los derechos reservados.</p>
         </div>
-    </div>
-
-
-    <footer class="pie-pagina text-center">
-        <p class="texto-pie text-muted">EA Store © 2025 Todos los derechos reservados.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

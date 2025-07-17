@@ -1,150 +1,306 @@
 body {
-    padding-top: 0;
-    background-color: #4B0082;
-    color: #333;
+    background-color: #000000;
+    color: #E0E0E0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
 }
 
 .navbar-custom {
-    background-color: #3f003f;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #000000;
+    border-bottom: 1px solid #0096C7;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+    padding: 0.75rem 0;
 }
 
-.navbar-custom .navbar-nav .enlace-nav {
-    color: #ffffff;
+.navbar-brand-img {
+    transition: transform 0.3s ease;
+    border-radius: 50%;
 }
 
-.navbar-custom .marca-navbar img {
-    transition: transform 0.3s;
-}
-
-.navbar-custom .marca-navbar:hover img {
+.navbar-brand-img:hover {
     transform: scale(1.05);
 }
 
-.navbar-custom .enlace-nav {
+.navbar-nav .nav-link {
+    color: #BB86FC;
     font-weight: 500;
     padding: 0.5rem 1rem;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-.navbar-custom .enlace-nav:hover {
-    color: #00b4d8 !important;
-}
-
-.navbar-custom .enlace-nav.activo {
-    color: #00b4d8 !important;
+.navbar-nav .nav-link.active {
+    color: #48CAE4;
     font-weight: 600;
 }
 
-.navbar-custom .boton-primario {
-    background-color: #00b4d8;
-    border: none;
-    padding: 0.5rem 1.5rem;
-    transition: all 0.3s;
+.navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 2px;
+    background-color: #48CAE4;
+    border-radius: 2px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #90E0EF !important;
+}
+
+.btn-custom {
+    background-color: #00B4D8;
+    border-color: #00B4D8;
     color: white;
+    padding: 0.6rem 1.5rem;
+    border-radius: 0.3rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
-.navbar-custom .boton-primario:hover {
-    background-color: #0096c7;
+.btn-custom:hover {
+    background-color: #0096C7;
+    border-color: #0096C7;
     transform: translateY(-2px);
-}
-
-.navbar-custom .navbar-toggler-icon {
-    filter: brightness(0) invert(1);
+    box-shadow: 0 4px 10px rgba(0, 180, 216, 0.4);
 }
 
 .contenedor-principal {
     max-width: 1200px;
+    padding: 40px 15px;
 }
 
 .titulo-principal {
-    color: #1a1a2e;
+    color: #48CAE4;
+    font-weight: 700;
     margin-bottom: 1rem;
 }
 
 .subtitulo {
-    color: #00b4d8;
-    margin-bottom: 2rem;
+    color: #ADD8E6;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
 }
 
 .descripcion {
     font-size: 1.1rem;
     line-height: 1.7;
+    color:white;
+    margin-bottom: 1.5rem;
+}
+
+.imagen-nosotros {
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.imagen-nosotros:hover {
+    transform: scale(1.02);
+}
+
+.contenedor-video-responsivo {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #0A192F;
+    border-radius: 0.75rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.marco-video-responsivo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 .tarjeta-mision {
-    background-color: white;
+    background-color: #1A1A2E;
     padding: 1.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #2A2A2A;
+    transition: all 0.3s ease;
+}
+
+.tarjeta-mision:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .icono-mision {
-    background-color: rgba(0, 180, 216, 0.1) !important;
+    background-color: rgba(0, 180, 216, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icono-mision i {
+    color: #00B4D8;
+    font-size: 30px;
 }
 
 .titulo-mision {
-    color: #1a1a2e;
-    margin-bottom: 0.5rem;
+    color: #48CAE4;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.texto-mision {
+    color: #C0C0C0;
+    font-size: 0.95rem;
+}
+
+.seccion-equipo {
+    padding: 3rem 0;
 }
 
 .titulo-equipo {
-    color: #1a1a2e;
+    font-size: 2.2rem;
+    font-weight: 700;
     position: relative;
     padding-bottom: 1rem;
+    color: #48CAE4;
+    margin-bottom: 3rem;
 }
 
 .titulo-equipo::after {
-    content: "";
+    content: '';
     position: absolute;
-    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    bottom: 0;
     width: 80px;
-    height: 3px;
-    background-color: #00b4d8;
+    height: 4px;
+    background-color: #00B4D8;
+    border-radius: 2px;
 }
 
 .tarjeta-miembro {
-    transition: transform 0.3s, box-shadow 0.3s;
-    border: none;
-    border-radius: 0.8rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #2A2A2A;
+    border-radius: 0.75rem;
+    background-color: #1A1A2E;
+    color: #E0E0E0;
+    padding: 1.5rem;
 }
 
 .tarjeta-miembro:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    border-color: #00B4D8;
+}
+
+.imagen-miembro {
+    border: 4px solid #00B4D8;
+    object-fit: cover;
+    margin-bottom: 1rem;
 }
 
 .nombre-miembro {
-    color: #1a1a2e;
+    color: #48CAE4;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.cargo-miembro {
+    color: #FFFFFF;
+    font-size: 0.9rem;
+}
+
+
+.descripcion-equipo {
+    color: #FFFFFF;
+    font-size: 0.95rem;
+    line-height: 1.5;
     margin-top: 0.5rem;
 }
 
 .pie-pagina {
+    background-color: #121212;
+    border-top: 1px solid #2A2A2A;
     padding: 2rem 0;
-    background-color: #1a1a2e;
-    color: white;
-    margin-top: 3rem;
+    margin-top: 4rem;
+    color: #ADD8E6;
 }
 
 .texto-pie {
-    color: rgba(255, 255, 255, 0.7) !important;
-    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 @media (max-width: 992px) {
-    .columna-texto {
-        margin-top: 2rem;
+    .columna-imagen {
+        margin-bottom: 2rem;
+    }
+    .titulo-principal {
+        font-size: 2.8rem;
+    }
+    .titulo-equipo {
+        font-size: 2rem;
     }
 }
 
 @media (max-width: 768px) {
-    body {
-        padding-top: 60px;
+    .navbar-collapse {
+        background-color: #000000;
+        border-top: 1px solid #0096C7;
+        margin-top: 0.5rem;
+        border-radius: 0.3rem;
+        padding: 1rem;
     }
+    .titulo-principal {
+        font-size: 2.2rem;
+    }
+    .subtitulo {
+        font-size: 1.1rem;
+    }
+    .descripcion {
+        font-size: 1rem;
+    }
+    .titulo-equipo {
+        font-size: 1.8rem;
+    }
+    .imagen-miembro {
+        width: 100px;
+        height: 100px;
+    }
+    .nombre-miembro {
+        font-size: 1.2rem;
+    }
+    .cargo-miembro {
+        font-size: 0.85rem;
+    }
+}
 
-    .navbar-custom .enlace-nav {
-        padding: 0.5rem 0;
+@media (max-width: 576px) {
+    .titulo-principal {
+        font-size: 1.8rem;
+    }
+    .subtitulo {
+        font-size: 1rem;
+    }
+    .descripcion {
+        font-size: 0.95rem;
+    }
+    .titulo-equipo {
+        font-size: 1.5rem;
+    }
+    .tarjeta-miembro {
+        padding: 1rem;
+    }
+    .imagen-miembro {
+        width: 80px;
+        height: 80px;
     }
 }

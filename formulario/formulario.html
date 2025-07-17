@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario - EA Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="../formulario/formulario.css" rel="stylesheet">
+    <link rel="icon" href="../Imagenes/cpu-fill.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg menu-principal">
+        <div class="container">
+            <a class="navbar-brand" href="../Index.html">
+                <img src="../Imagenes/logo.jpg" alt="EA Store Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto menu">
+                    <li class="nav-item"><a class="nav-link" href="../Index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Productos/Productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="formulario.html">Registro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Pagina Nosotros/Nosotros.html">Nosotros</a></li>
+                </ul>
+                <a href="../Productos/Productos.html" class="btn btn-primario">
+                    <i class="bi bi-cart3"></i>
+                    <span class="badge bg-light ms-1">3</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="text-center mb-5">
+            <h1>Registro de Usuario</h1>
+            <p>Únete a nuestra comunidad tecnológica</p>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="formulario-container">
+                    <form id="userForm"> 
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" class="form-control campo-formulario" id="nombre" required>
+                                    <span id="errorNombre" class="error-message"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="apellido">Apellido</label>
+                                    <input type="text" class="form-control campo-formulario" id="apellido" required>
+                                    <span id="errorApellido" class="error-message"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control campo-formulario" id="email" required>
+                                    <span id="errorEmail" class="error-message"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono">Teléfono</label>
+                                    <input type="tel" class="form-control campo-formulario" id="telefono">
+                                    <span id="errorTelefono" class="error-message"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="username">Usuario</label>
+                                    <input type="text" class="form-control campo-formulario" id="username" required>
+                                    <span id="errorUsername" class="error-message"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contrasena">Contraseña</label>
+                                    <input type="password" class="form-control campo-formulario" id="contrasena" required>
+                                    <span id="errorContrasena" class="error-message"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="intereses">Intereses</label>
+                            <select class="form-select campo-formulario" id="intereses" multiple>
+                                <option value="gaming">Gaming</option>
+                                <option value="programacion">Programación</option>
+                                <option value="hardware">Hardware</option>
+                            </select>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-primario" id="botonEnviar">
+                                <i class="bi bi-person-plus me-2"></i>Registrarse
+                            </button>
+                            <span id="registroExitoso" class="text-success ms-3"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <h2 class="text-center mb-4">Usuarios Registrados</h2>
+            <div class="table-responsive">
+                <table class="tabla-usuarios" id="userTable">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Email</th>
+                            <th>Teléfono</th>
+                            <th>Usuario</th>
+                            <th>Intereses</th>
+                            <th>Acciones</th> 
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer class="pie-pagina">
+        <div class="container">
+            <p>EA Store © 2025 Todos los derechos reservados.</p>
+        </div>
+    </footer>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/formulario.js"></script>
+</body>
+</html>

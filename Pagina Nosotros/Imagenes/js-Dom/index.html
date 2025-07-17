@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <!-- Botón interactivo -->
+    <div class="seccion">
+        <button id="btn-interactivo" onclick="botonDinamico()">Haz clic aquí</button>
+    </div>
+    
+    <!-- EJERCICIO 2 - Contenedor de colores -->
+    <div class="seccion">
+        <h2>Cambio de Colores</h2>
+        <div class="contenedor" style="padding: 20px; min-height: 100px;">
+            Pasa el mouse y haz clic aquí
+        </div>
+    </div>
+    
+    <!-- EJERCICIO 3 - Cambio de imágenes -->
+    <div class="seccion">
+        <h2>Galería de Imágenes</h2>
+        <div class="contenedor-imagen">
+            <img id="imagen-principal" src="imagenes/david-mercier-7mCIrAeWda0-unsplash.jpg" alt="Foto artística">
+        </div>
+    </div>
+    
+    <!-- EJERCICIO 4 - Mensajes -->
+    <div class="seccion">
+        <h2>Enviar Mensaje</h2>
+        <label for="mensaje">Ingrese un mensaje:</label>
+        <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+        <button id="botonImprimir">Imprimir Mensaje</button>
+        <div id="imprimir"></div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

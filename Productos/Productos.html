@@ -4,248 +4,459 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos - EA Store</title>
-    <link href="Productos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" href="Imagenes/cpu-fill.svg" type="image/svg+xml">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="Productos.css" rel="stylesheet">
+    <link rel="icon" href="../Imagenes/cpu-fill.svg" type="image/svg+xml">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
-        <div class="contenedor">
-             <a class="navbar-brand" href="http://127.0.0.1:5500/Index.html">
-                <img src="Imagenes/logo.jpg" alt="EA Store Logo" width="100" height="100">
+    <nav class="navegacion-principal navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="contenedor container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="../Index.html">
+                <img src="../Imagenes/logo.jpg" alt="EA Store Logo" class="logo-marca me-2" width="50" height="50"> EA Store
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/Index.html">Inicio</a></li>
-                     <li class="nav-item"><a class="nav-link active" href="http://127.0.0.1:5500/Productos/Productos.html">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/Pagina%20Nosotros/Nosotros.html">Nosotros</a></li>
+            <div class="collapse navbar-collapse" id="menuNavegacion">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="../Index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Pagina Nosotros/Nosotros.html">Nosotros</a></li>
                 </ul>
-                <a href="#" class="btn btn-custom">
-                    <img src="Imagenes/cart4.svg" alt="Carrito" style="height: 20px;">
-                
-                  </a>
+                <a href="/carrito/carrito.html" class="btn btn-primario">
+                    <i class="bi bi-cart3"></i>
+                    <span class="badge bg-primary ms-1" id="contadorCarrito">0</span>
+                </a>
             </div>
         </div>
     </nav>
 
-     <div class="contenedor my-5">
-        <h1 class="text-center mb-5">Nuestros Productos</h1>
+    <div class="contenedor my-5">
+        <div class="encabezado-productos text-center mb-5">
+            <h1 class="display-4 fw-bold mb-3">Nuestros Productos</h1>
+            <p class="lead">Tecnología de vanguardia para todas tus necesidades</p>
+        </div>
         
-         <div class="row mb-4">
-            <div class="col-12">
-                <table class="tabla-productos">
-                    <thead>
-                        <tr>
-                            <th>
-                                <span class="encabezado-ordenable">
-                                     Nombre
-                                    <svg class="icono-ordenacion" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
-                                    </svg>
-                                </span>
-                            </th>
-                            <th>
-                                <span class="encabezado-ordenable">
-                                    Categoría
-                                    <svg class="icono-ordenacion" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
-                                      </svg>
-                                </span>
-                            </th>
-                            <th>
-                                <span class="encabezado-ordenable">
-                                    Marca
-                                      <svg class="icono-ordenacion" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
-                                     </svg>
-                                 </span>
-                             </th>
-                              <th>
-                                <span class="encabezado-ordenable">
-                                    Precio
-                                    <svg class="icono-ordenacion" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
-                                    </svg>
-                                </span>
-                            </th>
-                            <th>
-                                <span class="encabezado-ordenable">
-                                    Stock
-                                     <svg class="icono-ordenacion" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
-                                    </svg>
-                                </span>
-                             </th>
-                            <th>
-                                <span class="encabezado-ordenable">
-                                    Ventas Totales
-                                    <svg class="icono-ordenacion" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
-                                    </svg>
-                                </span>
-                            </th>
-                              <th>
-                                <span class="encabezado-ordenable">
-                                    Estado
-                                    <svg class="icono-ordenacion" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
-                                    </svg>
-                                </span>
-                            </th>
-                        </tr>
-                    </thead>
-                     <tbody>
-                        <tr>
-                            <td class="texto">PC Compacta</td>
-                            <td>PC</td>
-                            <td>PC Compacta</td>
-                            <td>$1,299</td>
-                             <td>50</td>
-                            <td>200</td>
-                            <td>Agotado</td>
-                        </tr>
-                        <tr>
-                            <td class="texto">Laptop Creativa</td>
-                            <td>Laptop</td>
-                            <td>Laptop Creativa</td>
-                            <td>$2,799.99</td>
-                            <td>120</td>
-                            <td>300</td>
-                            <td>Agotado</td>
-                         </tr>
-                        <tr>
-                            <td class="texto">PC Streaming</td>
-                            <td>PC</td>
-                             <td>PC Streaming</td>
-                            <td>$1,899.99</td>
-                            <td>80</td>
-                            <td>150</td>
-                            <td>En Stock</td>
-                        </tr>
-                        <tr>
-                            <td class="texto">Laptop Económica</td>
-                            <td>Laptop</td>
-                             <td>Laptop Económica</td>
-                             <td>$1,099</td>
-                             <td>30</td>
-                             <td>120</td>
-                             <td>En Stock</td>
-                         </tr>
-                        <tr>
-                            <td class="texto">Workstation Pro</td>
-                            <td>Workstation Pro</td>
-                            <td>PC</td>
-                             <td>$1,199.99</td>
-                            <td>25</td>
-                            <td>80</td>
-                            <td>En Stock</td>
-                        </tr>
-                        <tr>
-                            <td class="texto">Ultrabook Premium</td>
-                            <td>Ultrabook Premium</td>
-                            <td>Intel</td>
-                            <td>$1,199.99</td>
-                            <td>100</td>
-                            <td>200</td>
-                             <td>En Stock</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="filtros-productos mb-5">
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-3">
+                    <input type="text" class="form-control campo-busqueda" placeholder="Buscar productos...">
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <select class="form-select">
+                        <option selected>Todas las categorías</option>
+                        <option>Laptops</option>
+                        <option>PC Gaming</option>
+                        <option>Monitores</option>
+                        <option>Periféricos</option>
+                        <option>Componentes</option>
+                        <option>Accesorios</option>
+                    </select>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <select class="form-select">
+                        <option selected>Todas las marcas</option>
+                        <option>ASUS</option>
+                        <option>HP</option>
+                        <option>Lenovo</option>
+                        <option>MSI</option>
+                        <option>Logitech</option>
+                        <option>Razer</option>
+                        <option>HyperX</option>
+                        <option>Intel</option>
+                        <option>AMD</option>
+                        <option>NVIDIA</option>
+                        <option>Samsung</option>
+                    </select>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <select class="form-select">
+                        <option selected>Ordenar por</option>
+                        <option>Precio: Menor a Mayor</option>
+                        <option>Precio: Mayor a Menor</option>
+                        <option>Más vendidos</option>
+                        <option>Mejor valorados</option>
+                        <option>Novedades</option>
+                    </select>
+                </div>
             </div>
         </div>
         
-        <div class="row g-4 mt-5"> <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="card producto-card h-100 shadow-sm">
-                    <span class="badge category-badge position-absolute top-0 end-0 m-2">Laptop</span>
-                    <img src="Imagenes/Ultrabook Premium.jpg" class="card-img-top product-img" alt="Ultrabook Premium">
-                    <div class="card-body">
-                        <h5>Ultrabook Premium</h5>
-                         <p class="text-muted small">Intel i5-1135G7, 8GB RAM, 512GB SSD, Iris Xe, 14" 4K Touch, 1.2kg</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="fw-bold text-dark">$1,199.99</span>
+        <div class="contenedor-productos">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="tarjeta-producto h-100">
+                        <span class="badge bg-primary posicion-absoluta">Laptop</span>
+                        <div class="contenedor-imagen">
+                            <img src="Imagenes/LAPTOP-ASUS-ZENBOOK-14 fondo negro.png" class="card-img-top" alt="ASUS ZenBook 14">
+                            <div class="overlay-producto">
+                                <button class="btn btn-outline-light btn-sm">Ver detalles</button>
+                                <button class="btn btn-primario btn-sm mt-2 agregar-carrito" data-nombre="ASUS ZenBook 14" data-precio="1199.99">Añadir al carrito</button>
+                            </div>
                         </div>
-                    </div>
-                 </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="card producto-card h-100 shadow-sm">
-                    <span class="badge category-badge position-absolute top-0 end-0 m-2">PC</span>
-                    <img src="Imagenes/Workstation Pro.jpg" class="card-img-top product-img" alt="Workstation Pro">
-                    <div class="card-body">
-                        <h5>Workstation Pro</h5>
-                        <p class="text-muted small">Intel Xeon W-2245, 64GB RAM, RTX A4000 16GB, 2TB NVMe + 4TB HDD</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="fw-bold text-dark">$3,299.99</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="card producto-card h-100 shadow-sm">
-                    <span class="badge category-badge position-absolute top-0 end-0 m-2">Laptop</span>
-                     <img src="Imagenes/Laptop Económica.avif" class="card-img-top product-img" alt="Laptop Económica">
-                    <div class="card-body">
-                        <h5>Laptop Económica</h5>
-                        <p class="text-muted small">Ryzen 5 5500U, 12GB RAM, 256GB SSD, Vega 7, 15.6" FHD, Windows 11</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="fw-bold text-dark">$599.99</span>
+                        <div class="cuerpo-tarjeta">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="titulo-producto mb-0">ASUS ZenBook 14</h5>
+                                <div class="valoracion">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                            </div>
+                            <p class="descripcion-producto">Intel Core i7-1165G7, 16GB RAM, 512GB SSD, Iris Xe, 14" FHD, 1.17kg</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="precio">$1,199.99</span>
+                                <span class="stock text-success"><i class="bi bi-check-circle-fill"></i> En stock</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="card producto-card h-100 shadow-sm">
-                    <span class="badge category-badge position-absolute top-0 end-0 m-2">PC</span>
-                    <img src="Imagenes/PC Streaming.png" class="card-img-top product-img" alt="PC Streaming">
-                    <div class="card-body">
-                        <h5>PC Streaming</h5>
-                        <p class="text-muted small">Ryzen 7 5800X, 16GB RAM, RTX 3070 8GB, 1TB NVMe, WiFi 6, RGB</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="fw-bold text-dark">$1,899.99</span>
+                
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="tarjeta-producto h-100">
+                        <span class="badge bg-primary posicion-absoluta">Laptop</span>
+                        <div class="contenedor-imagen">
+                            <img src="Imagenes/LAPTOP-HP-VICTUS-16-D0510LA-fondo negro.png" class="card-img-top" alt="HP Victus 16">
+                            <div class="overlay-producto">
+                                <button class="btn btn-outline-light btn-sm">Ver detalles</button>
+                                <button class="btn btn-primario btn-sm mt-2 agregar-carrito" data-nombre="HP Victus 16" data-precio="1299.99">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="cuerpo-tarjeta">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="titulo-producto mb-0">HP Victus 16</h5>
+                                <div class="valoracion">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                </div>
+                            </div>
+                            <p class="descripcion-producto">AMD Ryzen 7 5800H, 16GB RAM, RTX 3060, 512GB SSD, 16.1" FHD 144Hz</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="precio">$1,299.99</span>
+                                <span class="stock text-success"><i class="bi bi-check-circle-fill"></i> En stock</span>
+                            </div>
                         </div>
                     </div>
-                  </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="card producto-card h-100 shadow-sm">
-                    <span class="badge category-badge position-absolute top-0 end-0 m-2">Laptop</span>
-                    <img src="Imagenes/Laptop Creativa.jpg" class="card-img-top product-img" alt="Laptop Creativa">
-                    <div class="card-body">
-                        <h5>Laptop Creativa</h5>
-                        <p class="text-muted small">Intel i9-12900H, 32GB RAM, 2TB SSD, RTX 3070 Ti 8GB, 16" QHD 165Hz</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="fw-bold text-dark">$2,799.99</span>
-                        </div>
-                     </div>
                 </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="card product-card h-100 shadow-sm">
-                    <span class="badge category-badge position-absolute top-0 end-0 m-2">PC</span>
-                    <img src="Imagenes/PC Compacta.jpg" class="card-img-top product-img" alt="PC Compacta">
-                    <div class="card-body">
-                         <h5>PC Compacta</h5>
-                        <p class="text-muted small">Intel i5-12400, 16GB RAM, 512GB SSD, Iris Xe, Mini-ITX, Sin GPU</p>
-                         <div class="d-flex justify-content-between align-items-center">
-                            <span class="fw-bold text-dark">$899.99</span>
-                         </div>
+                
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="tarjeta-producto h-100">
+                        <span class="badge bg-primary posicion-absoluta">PC Gaming</span>
+                        <div class="contenedor-imagen">
+                            <img src="Imagenes/Skytech-fondo negro.jpg" class="card-img-top" alt="Skytech Blaze II">
+                            <div class="overlay-producto">
+                                <button class="btn btn-outline-light btn-sm">Ver detalles</button>
+                                <button class="btn btn-primario btn-sm mt-2 agregar-carrito" data-nombre="Skytech Blaze II" data-precio="1199.99">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="cuerpo-tarjeta">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="titulo-producto mb-0">Skytech Blaze II</h5>
+                                <div class="valoracion">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                            </div>
+                            <p class="descripcion-producto">AMD Ryzen 5 5600X, RTX 3060 Ti, 16GB DDR4, 1TB NVMe, Win 11</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="precio">$1,199.99</span>
+                                <span class="stock text-success"><i class="bi bi-check-circle-fill"></i> En stock</span>
+                            </div>
+                        </div>
                     </div>
-                 </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="tarjeta-producto h-100">
+                        <span class="badge bg-primary posicion-absoluta">Accesorio</span>
+                        <div class="contenedor-imagen">
+                            <img src="Imagenes/logitech-mouse-alambrico-gaming-g502-fondo negro.jpg" class="card-img-top" alt="Logitech G502 Hero">
+                            <div class="overlay-producto">
+                                <button class="btn btn-outline-light btn-sm">Ver detalles</button>
+                                <button class="btn btn-primario btn-sm mt-2 agregar-carrito" data-nombre="Logitech G502 Hero" data-precio="79.99">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="cuerpo-tarjeta">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="titulo-producto mb-0">Logitech G502 Hero</h5>
+                                <div class="valoracion">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                            </div>
+                            <p class="descripcion-producto">Ratón gaming 25K DPI, RGB, 11 botones programables, peso ajustable</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="precio">$79.99</span>
+                                <span class="stock text-success"><i class="bi bi-check-circle-fill"></i> En stock</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="tarjeta-producto h-100">
+                        <span class="badge bg-primary posicion-absoluta">Accesorio</span>
+                        <div class="contenedor-imagen">
+                            <img src="Imagenes/hiperX cloud-fondo negro.jpg" class="card-img-top" alt="HyperX Cloud II">
+                            <div class="overlay-producto">
+                                <button class="btn btn-outline-light btn-sm">Ver detalles</button>
+                                <button class="btn btn-primario btn-sm mt-2 agregar-carrito" data-nombre="HyperX Cloud II" data-precio="99.99">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="cuerpo-tarjeta">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="titulo-producto mb-0">HyperX Cloud II</h5>
+                                <div class="valoracion">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                </div>
+                            </div>
+                            <p class="descripcion-producto">Audífonos gaming 7.1 virtual, micrófono desmontable, memoria espuma</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="precio">$99.99</span>
+                                <span class="stock text-success"><i class="bi bi-check-circle-fill"></i> En stock</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="tarjeta-producto h-100">
+                        <span class="badge bg-primary posicion-absoluta">Componente</span>
+                        <div class="contenedor-imagen">
+                            <img src="Imagenes/rtx4070-fondo negro.jpg" class="card-img-top" alt="NVIDIA RTX 4070">
+                            <div class="overlay-producto">
+                                <button class="btn btn-outline-light btn-sm">Ver detalles</button>
+                                <button class="btn btn-primario btn-sm mt-2 agregar-carrito" data-nombre="NVIDIA RTX 4070" data-precio="599.99">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="cuerpo-tarjeta">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="titulo-producto mb-0">NVIDIA RTX 4070</h5>
+                                <div class="valoracion">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                            </div>
+                            <p class="descripcion-producto">12GB GDDR6X, DLSS 3, 5888 CUDA Cores, 2475 MHz Boost Clock</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="precio">$599.99</span>
+                                <span class="stock text-success"><i class="bi bi-check-circle-fill"></i> En stock</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="tarjeta-producto h-100">
+                        <span class="badge bg-primary posicion-absoluta">Componente</span>
+                        <div class="contenedor-imagen">
+                            <img src="Imagenes/Ryzen 7-fondonegro.jpg" class="card-img-top" alt="AMD Ryzen 7 5800X">
+                            <div class="overlay-producto">
+                                <button class="btn btn-outline-light btn-sm">Ver detalles</button>
+                                <button class="btn btn-primario btn-sm mt-2 agregar-carrito" data-nombre="AMD Ryzen 7 5800X" data-precio="299.99">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="cuerpo-tarjeta">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="titulo-producto mb-0">AMD Ryzen 7 5800X</h5>
+                                <div class="valoracion">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                </div>
+                            </div>
+                            <p class="descripcion-producto">8 núcleos, 16 hilos, 4.7GHz Max Boost, 36MB cache, Socket AM4</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="precio">$299.99</span>
+                                <span class="stock text-success"><i class="bi bi-check-circle-fill"></i> En stock</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="tarjeta-producto h-100">
+                        <span class="badge bg-primary posicion-absoluta">Laptop</span>
+                        <div class="contenedor-imagen">
+                            <img src="Imagenes/lenovo legion5-fondo negro.jpg" class="card-img-top" alt="Lenovo Legion 5">
+                            <div class="overlay-producto">
+                                <button class="btn btn-outline-light btn-sm">Ver detalles</button>
+                                <button class="btn btn-primario btn-sm mt-2 agregar-carrito" data-nombre="Lenovo Legion 5" data-precio="1599.99">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="cuerpo-tarjeta">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="titulo-producto mb-0">Lenovo Legion 5</h5>
+                                <div class="valoracion">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                            </div>
+                            <p class="descripcion-producto">AMD Ryzen 7 5800H, RTX 3070, 16GB RAM, 1TB SSD, 15.6" QHD 165Hz</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="precio">$1,599.99</span>
+                                <span class="stock text-danger"><i class="bi bi-exclamation-circle-fill"></i> Últimas unidades</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="tarjeta-producto h-100">
+                        <span class="badge bg-primary posicion-absoluta">Monitor</span>
+                        <div class="contenedor-imagen">
+                            <img src="Imagenes/samsung fondo negro.png" class="card-img-top" alt="Samsung Odyssey G9">
+                            <div class="overlay-producto">
+                                <button class="btn btn-outline-light btn-sm">Ver detalles</button>
+                                <button class="btn btn-primario btn-sm mt-2 agregar-carrito" data-nombre="Samsung Odyssey G9" data-precio="999.99">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="cuerpo-tarjeta">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="titulo-producto mb-0">Samsung Odyssey G9</h5>
+                                <div class="valoracion">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                </div>
+                            </div>
+                            <p class="descripcion-producto">Monitor curvo 49" ultrawide, 240Hz, 1ms, HDR1000</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="precio">$999.99</span>
+                                <span class="stock text-success"><i class="bi bi-check-circle-fill"></i> En stock</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="tarjeta-producto h-100">
+                        <span class="badge bg-primary posicion-absoluta">Periférico</span>
+                        <div class="contenedor-imagen">
+                            <img src="Imagenes/razer-fondo negro.jpg" class="card-img-top" alt="Razer BlackWidow V3">
+                            <div class="overlay-producto">
+                                <button class="btn btn-outline-light btn-sm">Ver detalles</button>
+                                <button class="btn btn-primario btn-sm mt-2 agregar-carrito" data-nombre="Razer BlackWidow V3" data-precio="139.99">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="cuerpo-tarjeta">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="titulo-producto mb-0">Razer BlackWidow V3</h5>
+                                <div class="valoracion">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                            </div>
+                            <p class="descripcion-producto">Teclado mecánico gaming, switches verdes, RGB Chroma</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="precio">$139.99</span>
+                                <span class="stock text-success"><i class="bi bi-check-circle-fill"></i> En stock</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="tarjeta-producto h-100">
+                        <span class="badge bg-primary posicion-absoluta">PC Gaming</span>
+                        <div class="contenedor-imagen">
+                            <img src="Imagenes/msi.png" class="card-img-top" alt="MSI Gaming Desktop Trident">
+                            <div class="overlay-producto">
+                                <button class="btn btn-outline-light btn-sm">Ver detalles</button>
+                                <button class="btn btn-primario btn-sm mt-2 agregar-carrito" data-nombre="MSI Gaming Desktop Trident" data-precio="1499.99">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="cuerpo-tarjeta">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="titulo-producto mb-0">MSI Gaming Desktop Trident</h5>
+                                <div class="valoracion">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                            </div>
+                            <p class="descripcion-producto">Intel Core i7, RTX 3060, 16GB RAM, 512GB SSD + 1TB HDD</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="precio">$1,499.99</span>
+                                <span class="stock text-success"><i class="bi bi-check-circle-fill"></i> En stock</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="tarjeta-producto h-100">
+                        <span class="badge bg-primary posicion-absoluta">Componente</span>
+                        <div class="contenedor-imagen">
+                            <img src="Imagenes/crucial-fondo negro.jpg" class="card-img-top" alt="Crucial P5 Plus 1TB">
+                            <div class="overlay-producto">
+                                <button class="btn btn-outline-light btn-sm">Ver detalles</button>
+                                <button class="btn btn-primario btn-sm mt-2 agregar-carrito" data-nombre="Crucial P5 Plus 1TB" data-precio="89.99">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="cuerpo-tarjeta">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="titulo-producto mb-0">Crucial P5 Plus 1TB</h5>
+                                <div class="valoracion">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                            </div>
+                            <p class="descripcion-producto">SSD NVMe PCIe Gen4, hasta 6600MB/s lectura, 5000MB/s escritura</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="precio">$89.99</span>
+                                <span class="stock text-success"><i class="bi bi-check-circle-fill"></i> En stock</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-     <div class="text-center">
-         <p class="text-muted">EA Store © 2025 Todos los derechos reservados.</p>
-     </div>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <footer class="pie-pagina text-center">
+        <div class="contenedor py-3">
+            <p class="mb-0">EA Store &copy; 2025 Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+    <script src="/js/carrito.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
